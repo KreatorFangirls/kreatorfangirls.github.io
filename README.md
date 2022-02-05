@@ -1,3 +1,5 @@
 Link dump/ Kreator resources
 
-See [page](https://kreatorfangirls.github.io)
+Excuse us, we have no idea what we're doing.
+
+See [page](https://kreatorfangirls.github.io).
