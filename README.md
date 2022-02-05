@@ -1,3 +1,3 @@
 Link dump/ Kreator resources
 
-See [page](kreatorfangirls.github.io)
+See [page](https://kreatorfangirls.github.io)
