@@ -24,13 +24,13 @@ jobs:
         run: |
           npm i -g pug-cli
           find src/pug/*.pug -type f -maxdepth 1 -exec pug {} --out . \; || true
-          find src/pug/dates -type d -maxdepth 1 -mindepth 1 -exec bash -c 'pug $1 --out dates/${1##*/}' bash {} \; || true
+          find src/pug/shows -type d -maxdepth 1 -mindepth 1 -exec bash -c 'pug $1 --out shows/${1##*/}' bash {} \; || true
       - name: Add and commit changes to main branch
         run: |
           git config --local user.email 'action@github.com'
           git config --local user.name 'GitHub Action'
           git add css/* || true
-          git add dates/* || true
+          git add shows/* || true
           git add *.html || true
           git diff-index --quiet HEAD || git commit -m 'Update compiled files'
           git push
