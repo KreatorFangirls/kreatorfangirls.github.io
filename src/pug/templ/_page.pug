@@ -1,0 +1,46 @@
+- let nav = [
+- 	{
+- 		text: 'Homepage', 
+- 		attr: { href: '#', title='back to homepage' }
+- 	}, 
+- 	{
+- 		text: 'Kreator online', 
+- 		attr: { href: '#', title='links to band website and social media channels' }
+- 	}, 
+- 	{
+- 		text: 'Kreator live', 
+- 		attr: { href: '#', title='upcoming tour dates & more...' }
+- 	}, 
+- 	{
+- 		text: 'Kreator merch', 
+- 		attr: { href: '#', title='stores that sell official merch' }
+- 	}
+- ];
+- let n = nav.length;
+
+mixin navi(excl = -1)
+	nav
+		- for(let i = 0; i < n; i++)
+			- if(i !== excl)
+				- let c = nav[i], a = c.attr;
+				a(href=a.href title=a.title) #{c.text}
+
+doctype html
+html(lang="en")
+
+	head
+		meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+		block title
+		link(rel="stylesheet" href="/css/main.css")
+
+	body
+		header
+			block header			
+
+		main
+			block content
+
+		footer
+			p Made with ❤️ in the 🇪🇺.
+			p We don't track you!
+			p If any of the info here is incorrect/ incomplete/ outdated, you can let us know on Twitter, GitHub or via email.
