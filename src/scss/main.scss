@@ -1,6 +1,8 @@
-$bg-1st: #0d1117;
-$bg-2nd: #333;
-$fg-1st: #eee;
+$bg-1st: #323446;
+$bg-2nd: #1c1e32;
+$fg-1st: #748193;
+$fg-2nd: #fff;
+$hl-1st: #c91866;
 
 * {
 	margin: 0;
@@ -19,4 +21,9 @@ body {
 	background: $bg-1st;
 	color: $fg-1st;
 	font: 1.25em/ 1.25 ubuntu, trebuchet ms, arial, sans-serif
+}
+
+a {
+	background: linear-gradient($hl-1st, $hl-1st) 0 100%/ 1% 3px repeat-x;
+	text-decoration: none;
 }
