@@ -3,6 +3,8 @@ $bg-2nd: #1c1e32;
 $fg-1st: #748193;
 $fg-2nd: #fff;
 $hl-1st: #c91866;
+$gd-lst: (#f6b945, #f56abf) (#2edc9f, #5686da) (#c46dd3, #5949ba);
+$t: .3s;
 
 * {
 	margin: 0;
@@ -32,4 +34,7 @@ a {
 	background: linear-gradient($hl-1st, $hl-1st) 0 100%/ 1% 3px repeat-x;
 	color: $fg-2nd;
 	text-decoration: none;
+	transition: $t;
+	
+	&:focus, &:hover { background-size: 1% }
 }
