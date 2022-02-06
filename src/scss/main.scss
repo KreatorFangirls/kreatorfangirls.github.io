@@ -40,7 +40,7 @@ a {
 }
 
 .card {
-	background: linear-gradient(to right top, nth($grd-lst, 1));
+	background: linear-gradient(to right top, nth($gd-lst, 1));
 	
 	&__wrap {
 		display: grid;
