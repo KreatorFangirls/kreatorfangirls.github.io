@@ -38,3 +38,13 @@ a {
 	
 	&:focus, &:hover { background-size: 1% 100% }
 }
+
+.card {
+	background: linear-gradient(to right top, nth($grd-lst, 1));
+	
+	&__wrap {
+		display: grid;
+		grid-gap: .5em;
+		grid-template-columns: repeat(auto-fit, min(100%, minmax(1fr, 32em)))
+	}
+}
