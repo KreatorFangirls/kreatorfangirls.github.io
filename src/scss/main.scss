@@ -45,6 +45,6 @@ a {
 	&__wrap {
 		display: grid;
 		grid-gap: .5em;
-		grid-template-columns: repeat(auto-fit, min(100%, minmax(1fr, 32em)))
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 21em), 1fr))
 	}
 }
