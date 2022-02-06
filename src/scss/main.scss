@@ -40,11 +40,21 @@ a {
 }
 
 .card {
-	background: linear-gradient(to right top, nth($gd-lst, 1));
+	padding: .5em;
+	background: $bg-2nd;
 	
 	&__wrap {
 		display: grid;
 		grid-gap: .5em;
 		grid-template-columns: repeat(auto-fit, minmax(min(100%, 21em), 1fr))
+	}
+	
+	&--pastel {
+		background: linear-gradient(to right top, nth($gd-lst, 1));
+		color: $bg-2nd;
+		
+		&:nth-child(3n + 2) { background: linear-gradient(to right top, nth($gd-lst, 2)) }
+		
+		&:nth-child(3n + 3) { background: linear-gradient(to right top, nth($gd-lst, 3)) }
 	}
 }
