@@ -1,6 +1,33 @@
+- 
+	var data = [
+		{
+			text: 'Homepage', 
+			attr: { href: '#', title: 'back to homepage' }
+		}, 
+		{
+			text: 'Kreator online', 
+			attr: { href: '#', title: 'links to band website and social media channels' }
+		}, 
+		{
+			text: 'Kreator live', 
+			attr: { href: '#', title: 'upcoming tour dates & more...' }
+		}, 
+		{
+			text: 'Kreator merch', 
+			attr: { href: '#', title: 'stores that sell official merch' }
+		}
+	];
+- var n = data.length;
+
+mixin navi(excl = -1)
+	nav
+		- for(var i = 0; i < n; i++)
+			- if(i !== excl)
+				- var c = data[i], a = c.attr;
+				a(href=a.href title=a.title) #{c.text}
+
 doctype html
 html(lang="en")
-
 	head
 		meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
 		block title
