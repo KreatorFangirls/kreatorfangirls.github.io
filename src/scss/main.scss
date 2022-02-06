@@ -23,7 +23,13 @@ body {
 	font: 1.25em/ 1.25 ubuntu, trebuchet ms, arial, sans-serif
 }
 
+nav {
+	background: $bg-2nd;
+	color: $fg-2nd
+}
+
 a {
 	background: linear-gradient($hl-1st, $hl-1st) 0 100%/ 1% 3px repeat-x;
+	color: $fg-2nd;
 	text-decoration: none;
 }
