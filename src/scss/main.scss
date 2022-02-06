@@ -1,9 +1,12 @@
+$sp: .5em;
+
 $bg-1st: #323446;
 $bg-2nd: #1c1e32;
 $fg-1st: #748193;
 $fg-2nd: #fff;
 $hl-1st: #c91866;
 $gd-lst: (#f6b945, #f56abf) (#2edc9f, #5686da) (#c46dd3, #5949ba);
+
 $t: .35s;
 
 * {
@@ -40,13 +43,14 @@ a {
 }
 
 .card {
-	padding: .5em;
+	padding: $sp;
 	background: $bg-2nd;
 	
 	&__wrap {
 		display: grid;
-		grid-gap: .5em;
-		grid-template-columns: repeat(auto-fit, minmax(min(100%, 21em), 1fr))
+		grid-gap: $sp;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 21em), 1fr));
+		padding: $sp
 	}
 	
 	&--pastel {
