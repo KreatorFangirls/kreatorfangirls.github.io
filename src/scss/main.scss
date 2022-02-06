@@ -4,7 +4,7 @@ $fg-1st: #748193;
 $fg-2nd: #fff;
 $hl-1st: #c91866;
 $gd-lst: (#f6b945, #f56abf) (#2edc9f, #5686da) (#c46dd3, #5949ba);
-$t: .3s;
+$t: .35s;
 
 * {
 	margin: 0;
@@ -36,5 +36,5 @@ a {
 	text-decoration: none;
 	transition: $t;
 	
-	&:focus, &:hover { background-size: 1% }
+	&:focus, &:hover { background-size: 1% 100% }
 }
