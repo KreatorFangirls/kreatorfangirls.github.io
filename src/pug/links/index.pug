@@ -1,1 +1,56 @@
+extends /templ/_page.pug
 
+block title
+	title Kreator online | #{s}
+
+block header
+	h1 Kreator: online presence
+	+navi(1)
+
+block content
+	section.card__wrap
+		article.card
+			p The official Kreator website can be found at 
+				a(href='https://www.kreator-terrorzone.de/' target='_blank') kreator-terrorzone.de
+				| .
+			p You can also check out 
+				a(href='https://www.nuclearblast.com/eu/band/kreator' target='_blank') the band's profile
+				|  on the Nuclear Blast website.
+		article.card
+			p You can check out the music on:
+				ul
+					li: a(href='https://kreator.bandcamp.com/' target='_blank') Bandcamp (no account required to listen)
+					li
+						span YouTube (mildly annoying without an account)
+						ul
+							li: a(href='https://www.youtube.com/c/kreator/playlists' target='_blank') Official Kreator channel
+							li
+								a(href='https://www.youtube.com/playlist?list=PLB4brr7vf-P74kh_1dK2hMaVXtg0rXvLA') Kreator playlist
+								|  on Nuclear Blast Records
+					li
+						a(href='https://music.apple.com/us/artist/kreator/3258504' target='_blank') Apple Music
+						span (requires account to listen)
+					li
+						a(href='https://open.spotify.com/artist/3BM0EaYmkKWuPmmHFUTQHv' target='_blank') Spotify
+						span (requires account to listen)
+		article.card
+			p You can follow Kreator on social media:
+				ul
+					li
+						span Twitter (somewhat annoying without an account)
+						ul
+							li Official Kreator account
+							li Fred
+							li Mille (inactive)
+					li
+						span Instagram (not viewable at all without an account anymore)
+						ul
+							li Official Kreator account
+							li Mille
+							li Fred
+							li Ventor (inactive)
+					li
+						span Facebook (very broken experience without an account, lots of pages cannot be viewed at all)
+						ul
+							li Official Kreator account
+							li Mille
