@@ -19,47 +19,69 @@ block content
 		article.card
 			p You can check out the music on:
 				ul
-					li: a(href='https://kreator.bandcamp.com/' target='_blank') Bandcamp (no account required to listen)
 					li
-						span YouTube (mildly annoying without an account)
+						a(href='https://kreator.bandcamp.com/' target='_blank') Bandcamp
+						a.note.sym(href='#note-0') ✔️
+					li
+						span YouTube
+						a.note.sym(href='#note-1') ⚠️
 						ul
-							li: a(href='https://www.youtube.com/c/kreator/playlists' target='_blank') Official Kreator channel
+							li
+								a(href='https://www.youtube.com/c/kreator/playlists' target='_blank') Official Kreator channel
 							li
 								a(href='https://www.youtube.com/playlist?list=PLB4brr7vf-P74kh_1dK2hMaVXtg0rXvLA') Kreator playlist
-								|  on Nuclear Blast Records
+								|  on Nuclear Blast Records channel
 					li
 						a(href='https://music.apple.com/us/artist/kreator/3258504' target='_blank') Apple Music
-						span (requires account to listen)
+						a.note.sym(href='#note-2') ‼️
 					li
 						a(href='https://open.spotify.com/artist/3BM0EaYmkKWuPmmHFUTQHv' target='_blank') Spotify
-						span (requires account to listen)
+						a.note.sym(href='#note-2') ‼️
 					li
 						a(href='https://www.deezer.com/us/artist/6067' target='_blank') Deezer
-						span (requires account to listen)
+						a.note.sym(href='#note-2') ‼️
 					li
 						a(href='https://tidal.com/browse/artist/2568' target='_blank') Tidal
-						span (requires account to listen)
+						a.note.sym(href='#note-2') ‼️
 					li
-						a(href='' target='_blank') Amazon Music
-						span (requires account to listen)
+						a(href='https://music.amazon.com/artists/B000QK9GPE/kreator' target='_blank') Amazon Music
+						a.note.sym(href='#note-2') ‼️
 		article.card
 			p You can follow Kreator on social media:
 				ul
 					li
-						span Twitter (somewhat annoying without an account)
+						span Twitter
+						a.note.sym(href='#note-1') ⚠️
 						ul
-							li Official Kreator account
-							li Fred
-							li Mille (inactive)
+							li: a(href='https://twitter.com/kreator' target='_blank') Official Kreator account
+							li: a(href='https://twitter.com/fredleclercq' target='_blank') Fred
+							li: a.inactive(href='https://twitter.com/MillePetrozza3' target='_blank') Mille
 					li
-						span Instagram (not viewable at all without an account anymore)
+						span Instagram
+						a.note.sym(href='#note-4') ❌
 						ul
-							li Official Kreator account
-							li Mille
-							li Fred
-							li Ventor (inactive)
+							li: a(href='https://www.instagram.com/kreatorofficial' target='_blank') Official Kreator account
+							li: a(href='https://www.instagram.com/mille.petrozza' target='_blank') Mille
+							li: a(href='https://www.instagram.com/evilfredos' target='_blank') Fred
+							li: a.inactive(href='https://www.instagram.com/jacktrommler' target='_blank') Ventor
 					li
-						span Facebook (very broken experience without an account, lots of pages cannot be viewed at all)
+						span Facebook
+						a.note.sym(href='#note-3') ⁉️
 						ul
-							li Official Kreator account
-							li Mille
+							li: a(href='https://www.facebook.com/KreatorOfficial') Official Kreator account
+							li: a(href='https://www.facebook.com/milandpetrozza') Mille
+							li: a(href='https://www.facebook.com/Frederic.Leclercq.Official') Fred
+		section.bbox
+			dl
+				dt#note-0 ✔️
+				dd No account required to stream or buy.
+				dt#note-1 ⚠️
+				dd Mildly annoying experience without an account, but can still access content.
+				dt#note-2 ‼️
+				dd Account required to stream, but can look around a bit without.
+				dt#note-3 ⁉️
+				dd Horribly broken experience without an account, pretty much limited to seeing latest posts in accounts' feeds and photos from the sidebar. And even that only after deleting blocking elements on top from DevTools.
+				dt#note-4 ❌
+				dd No access whatsoever without an account anymore, the links just redirect to a login page.
+		section.bbox
+			p Looking for something else? We also keep a list of upcoming tour dates, a list of merch stores and maintain a news section.
