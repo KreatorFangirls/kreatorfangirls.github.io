@@ -12,7 +12,7 @@ block header
 block content
 	section.min-full
 		h2 An illustrated guide of warning signs
-		div
+		p Here are the red flags you should look out for. Not every scam page will tick all the boxes and not every page that exhibits a couple of these patterns is necessarily a scam. But when you come across a page that fits most of the criteria below, stay away and report. And if the page/ website it links to are not on our list, please let us know so we can add it.
 	section.min-full
 		h2 The problematic merch shops
 		p We found a few of them
@@ -25,18 +25,28 @@ block content
 		h2 The "fan" accounts
 		p There are many! Once you start looking, you just keep on finding them. But there are so many, I'm sure we couldn't find them all.
 		table
+			- let name;
 			tr
 				th Band
 				th "Fan" account
 				th Store linked
+				th Status
 			tr
 				th Aerosmith
 				th
 				th RockTee
+				th active
 			tr
 				th Judas Priest
 				th: a(href='https://www.instagram.com/judaspriest.fan_/' rel='noreferrer' target='_blank') judaspriest.fan_
 				th RockTee
+				th acive
+			tr
+				- name = 'destruction__fanclub'
+				th Judas Priest
+				th: a(href='https://www.instagram.com/destruction__fanclub/' rel='noreferrer' target='_blank') destruction__fanclub
+				th RockTee
+				th acive
 	section.min-full
 		h2 What we did
 	section.min-full
