@@ -1,53 +1,30 @@
-extends /templ/_page.pug
+-
+	var cunt_data = [
+		{ band: 'Accept', user: 'accept__fans', stat: 'active', site: 'Rock Tee', suckers: 3704, targets: 6644 }, 
+		{ band: 'Aerosmith', user: 'aero_smith__fan', stat: 'active', site: 'Rock Tee', suckers: 130580, targets: 6654 }, 
+		{ band: 'Alice Cooper', user: 'alicecooper_lovers2s', stat: 'active', site: 'Rock Tee', suckers: 7357, targets: 6862 }, 
+		{ band: 'Anthrax', user: 'anthrax.lovess2', stat: 'active', site: 'Rock Tee', suckers: 4650, targets: 6752, scrn: 'anthrax1' }, 
+		{ band: 'Anthrax', user: 'anthrax_fans3', stat: 'active', site: 'Rock Tee', suckers: 3338, targets: 6834, scrn: 'anthrax2' }, 
+		{ band: 'Arch Enemy', user: 'archenemy.fan_', stat: 'active', site: 'iTee Global', suckers: 10393, targets: 5862 }, 
+		{ band: 'Avenged Sevenfold', user: 'avengedsevenfold_fans3', stat: 'active', site: 'Rock Tee', suckers: 8867, targets: 4429, scrn: 'a7x' }, 
+		{ band: 'Five Finger Death Punch', user: 'fivefingerdeathpunch_fanpages', stat: 'removed', site: 'Rock Tee', suckers: 22900, targets: 6506, scrn: '5fdp' }
+	];
 
-- let cunt_data = {};
+doctype html
+html(lang="en")
+	head
+		meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+		title
+		link(rel="stylesheet" href="/css/main.css")
 
-block title
-	title The "fan" accounts scam | #{s}
+	body
+		header
+			h1
+			
 
-block header
-	.min-full
-		h1 Extensive scam network disguised as seemingly unrelated "fan" accounts
-		span.attr an investigation by a bunch of meddling fangirls
-		p Everyone has so little patience these days, which is probably why so many people fall for this: they just don't have the patience to look at bios, post descriptions, details in what gets posted. So we're jumping straight into the essential.
+		main
+			
 
-block content
-	section.min-full
-		h2 An illustrated guide of warning signs
-		p Here are the red flags you should look out for. Not every scam page will tick all the boxes and not every page that exhibits a couple of these patterns is necessarily a scam. But when you come across a page that fits most of the criteria below, stay away and report. And if the page/ website it links to are not on our list, please let us know so we can add it.
-	section.min-full
-		h2 The problematic merch shops
-		p We found a few of them
-		ul
-			li Rock Tee
-	section.min-full
-		h2 The merch
-		p It seems to fall into to one of two categories.
-	section.min-full
-		h2 The "fan" accounts
-		p There are many! Once you start looking, you just keep on finding them. But there are so many, I'm sure we couldn't find them all.
-		table
-			tr
-				th Band
-				th "Fan" account
-				th Store linked
-				th Status
-			tr
-				th Aerosmith
-				th
-				th RockTee
-				th active
-			tr
-				th Judas Priest
-				th: a(href='https://www.instagram.com/judaspriest.fan_/' rel='noreferrer' target='_blank') judaspriest.fan_
-				th RockTee
-				th acive
-			tr
-				th Judas Priest
-				th: a(href='https://www.instagram.com/destruction__fanclub/' rel='noreferrer' target='_blank') destruction__fanclub
-				th RockTee
-				th acive
-	section.min-full
-		h2 What we did
-	section.min-full
-		h2 What can still be done
+		footer
+			p Made with ❤️ in 🇪🇺.
+			p We don't track you!
