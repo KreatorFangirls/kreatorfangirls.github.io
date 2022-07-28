@@ -143,9 +143,11 @@ html(lang="en")
 		main
 			table
 				- for(var i = 0; i < n_cunt; i++)
+					- var c = cunt_data[i];
 					tr
-						td #{i}
-						td ha
+						td #{c.for}
+						td #{c.user}
+						td #{site_data[c.site]}
 
 		footer
 			p Made with ❤️ in 🇪🇺.
