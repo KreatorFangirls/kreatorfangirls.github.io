@@ -146,8 +146,8 @@ html(lang="en")
 					- var c = cunt_data[i];
 					tr
 						td #{c.for}
-						td #{c.user}
-						td #{site_data[c.site]}
+						td: a(href=`https://instagram.com/${c.user}`) #{c.user}
+						td #{site_data[c.site].name}
 
 		footer
 			p Made with ❤️ in 🇪🇺.
