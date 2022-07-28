@@ -147,7 +147,7 @@ html(lang="en")
 					tr
 						td #{c.for}
 						td: a(href=`https://instagram.com/${c.user}`) #{c.user}
-						td #{site_data[c.site].name}
+						td #{c.site || c.site === 0 ? site_data[c.site].name : ''}
 
 		footer
 			p Made with ❤️ in 🇪🇺.
