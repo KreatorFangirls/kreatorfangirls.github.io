@@ -143,11 +143,14 @@ html(lang="en")
 		main
 			table
 				- for(var i = 0; i < n_cunt; i++)
-					- var c = cunt_data[i];
+					- var cc = cunt_data[i], cs = cc.site || cc.site === 0;
 					tr
-						td #{c.for}
-						td: a(href=`https://instagram.com/${c.user}`) #{c.user}
-						td #{c.site || c.site === 0 ? site_data[c.site].name : ''}
+						td #{cc.for}
+						td: a(href=`https://instagram.com/${cc.user}` rel='nofollow noreferrer' target='_blank') #{cc.user}
+						td
+							if cs
+								- var ss = site_data[cc.site];
+								a(href=ss.url rel='nofollow noreferrer' target='_blank') #{ss.name}
 
 		footer
 			p Made with ❤️ in 🇪🇺.
