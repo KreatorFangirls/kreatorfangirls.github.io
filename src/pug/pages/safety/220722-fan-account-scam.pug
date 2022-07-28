@@ -126,7 +126,7 @@
 		{ for: 'ZZ Top', user: 'zztop_daily', stat: 'active', site: 0, suckers: 183604, targets: 6030 }, 
 		{ for: 'ZZ Top', user: 'zztop.fansite', stat: 'active', site: 0, suckers: 42551, targets: 2287, idx: 1 }
 	];
-- let n_cunt = cunt_data.length;
+- var n_cunt = cunt_data.length;
 
 doctype html
 html(lang="en")
@@ -143,7 +143,7 @@ html(lang="en")
 		main
 			table
 				- for(var i = 0; i < n_cunt; i++)
-					- let cc = cunt_data[i]
+					- var cc = cunt_data[i]
 					tr
 						td #{cc.for}
 						td #{cc.user}
